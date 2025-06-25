@@ -1,4 +1,4 @@
-UPDATED segmentation:
+--UPDATED segmentation:
 
 
 -- Recency calculation
@@ -117,8 +117,6 @@ FROM main
 GROUP BY segment
 ORDER BY segment;
 
-
-    _________________________________________________________________________
 
 PER USER:
 
