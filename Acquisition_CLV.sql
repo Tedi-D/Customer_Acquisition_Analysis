@@ -289,11 +289,11 @@ SELECT -- acquisition channels
 
   CASE
     WHEN LOWER(traffic_source) IN ('facebook', 'm.facebook.com', 'l.facebook.com', 'lm.facebook.com', 'facebook.com') THEN 'Facebook'
-    WHEN LOWER(traffic_source) IN ('instagram', 'intstagram.com', 'l.instagram.com') THEN 'Instagram'
+    WHEN LOWER(traffic_source) IN ('instagram', 'instagram.com', 'l.instagram.com') THEN 'Instagram'
     WHEN LOWER(traffic_source) IN ('twitter', 'twitter.com') THEN 'Twitter'
     WHEN LOWER(traffic_source) IN ('tiktok', 'tiktok.com') THEN 'TikTok'
     WHEN LOWER(traffic_source) IN ('youtube', 'youtube.com') THEN 'YouTube'
-    WHEN LOWER(traffic_source) = '(direct)' THEN 'Organic'
+    WHEN LOWER(traffic_source) IN ('direct') THEN 'Organic'
     ELSE traffic_source
   END AS normalized_traffic_source
 FROM
