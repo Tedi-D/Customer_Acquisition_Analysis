@@ -1,4 +1,5 @@
 # Customer Acquisition Analysis
+![image](https://github.com/user-attachments/assets/61d95b0d-8ccb-4c3d-b1ab-6248ebdfa11b)
 
 🧠 Customer Lifetime Value Segmentation
 
